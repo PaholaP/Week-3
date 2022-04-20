@@ -1,12 +1,24 @@
 // Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93
+
 let ages = [3, 9, 23, 64, 2, 8, 28, 93];
 
 // Programmatically subtract the value of the first element in the array from the value in the last element of the array (do not use numbers to reference the last element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
-console.log("Subtraction value of the first element in the array from the value in the last element of the array:", ages[ages.length-1]-ages[0]);
+
+console.log(ages[ages.length-1]-ages[0]);
 
 // Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
 
+ages.push(22);
+console.log(ages[ages.length-1] - ages[0]);
+
 // Use a loop to iterate through the array and calculate the average age. Print the result to the console.
+
+var i,sum=0;
+for(i = 0; i < ages.length; i++)
+{
+    sum =sum +ages[i];
+}
+console.log)sum / ages.length);
 
 // Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 // let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
@@ -21,10 +33,10 @@ console.log("Subtraction value of the first element in the array from the value 
 
 // Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 // For example:
-namesArray = ["Sam", "Tom", "Tim", "Sally", "Buck", "Bob"];
-// nameLengths =
 // // namesArray = ["Kelly", "Sam", "Kate"] //given this array
 // nameLengths = [5, 3, 4] //create this new array
+
+namesArray = ["Sam", "Tom", "Tim", "Sally", "Buck", "Bob"];
 
 
 // Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
