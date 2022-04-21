@@ -122,3 +122,8 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
 
 // Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
 
+function alphabet_order(str)
+  {
+return str.split('').sort().join('');
+  }
+console.log(alphabet_order("baby"));
